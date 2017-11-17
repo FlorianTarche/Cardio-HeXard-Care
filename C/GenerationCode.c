@@ -3,7 +3,7 @@
 #include "GenerationCode.h"
 
 void GenCode(int Programme){
-    printf("\nG\x82n\x82ration du Code en cours ...\n");
+    printf("\nG%cn%cration du Code en cours ...\n", 130, 130);
     // TODO : REALISER LE PROGRAMME DE GENERATION DU CODE !
     FILE* fichier = NULL;
     fichier = fopen("param.h", "w");
@@ -41,13 +41,13 @@ void GenCode(int Programme){
             case 8:
                 fputs("#ifndef PARAM_H_INCLUDED\n#define PARAM_H_INCLUDED\n\nvoid Roueinfinie();\n\n#endif", fichier);
                 break;
-            //Mode 9 : Déremplissage
+            //Mode 9 : DÃ©remplissage
             case 9:
                 fputs("#ifndef PARAM_H_INCLUDED\n#define PARAM_H_INCLUDED\n\nvoid RempDeremp();\n\n#endif", fichier);
                 break;
-            //Autre résultat : Le programme reçoit un autre nombre que celui demandé.
+            //Autre rÃ©sultat : Le programme reÃ§oit un autre nombre que celui demandÃ©
             default:
-                printf("\nERREUR : Le nombre entr\x82 n'est pas propos\x82 ! Merci de r\x82""essayer ... \n\n");
+                printf("\nERREUR : Le nombre entr%c n'est pas propos%c ! Merci de r%cessayer ... \n\n", 130, 130, 130);
                 menu();
                 break;
         }
